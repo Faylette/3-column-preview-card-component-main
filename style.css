@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    font-size: 15px;
+}
+
+/* contains each of the containers (car cards) */
+.content {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    /* something wonky going on with the border-radius */
+}
+
+/* each car card */
+.container {
+    width: 350px;
+    padding: 40px;
+}
+
+div#sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+div#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+div#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    margin-bottom: 75px;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn1 {
+    color:hsl(31, 77%, 52%);
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}
