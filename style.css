@@ -14,12 +14,13 @@ body {
     display: flex;
     overflow: hidden;
     border-radius: 10px;
-    /* something wonky going on with the border-radius */
+    width: 80%;
+    margin: 100px auto;
 }
 
 /* each car card */
 .container {
-    width: 350px;
+    max-width: 1/3;
     padding: 40px;
 }
 
@@ -34,7 +35,6 @@ div#suvs {
 div#luxury {
     background-color: hsl(179, 100%, 13%);
 }
-
 
 h2 {
     color: hsl(0, 0%, 95%);
@@ -79,5 +79,6 @@ button:hover {
 @media (max-width: 600px) {
     .content {
         flex-direction: column;
+        width: 90%;
     }
 }
